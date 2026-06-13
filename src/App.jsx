@@ -565,7 +565,7 @@ function App() {
                   <span>Modern CSS</span>
                 </div>
                 <div className="featured-card__footer">
-                  <a href="https://weather-deploy-five.vercel.app/" className="btn btn--primary">
+                  <a href="https://weather-app-iota-fawn-27.vercel.app" className="btn btn--primary">
                     <i className="fas fa-external-link-alt"></i> Live Demo
                   </a>
                   <a href="https://github.com/shivani763/Weather-App.git" className="btn btn--ghost">
