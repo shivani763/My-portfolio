@@ -196,7 +196,9 @@ function App() {
     function closeLightbox() {
       lightbox.classList.remove("active");
       document.body.style.overflow = "";
-      setTimeout(() => { lbImg.src = ""; }, 300);
+      setTimeout(() => {
+        lbImg.src = "";
+      }, 300);
     }
 
     document.querySelectorAll(".cert-view-btn").forEach((btn) => {
@@ -207,8 +209,12 @@ function App() {
       });
     });
 
-    document.getElementById("lightbox-overlay").addEventListener("click", closeLightbox);
-    document.getElementById("lightbox-close").addEventListener("click", closeLightbox);
+    document
+      .getElementById("lightbox-overlay")
+      .addEventListener("click", closeLightbox);
+    document
+      .getElementById("lightbox-close")
+      .addEventListener("click", closeLightbox);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -338,8 +344,13 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                <svg
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                >
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                 </svg>
               </a>
               <a
@@ -350,8 +361,13 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                <svg
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                >
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                 </svg>
               </a>
               <a
@@ -360,8 +376,13 @@ function App() {
                 id="social-email"
                 aria-label="Email"
               >
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                <svg
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                >
+                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                 </svg>
               </a>
             </div>
@@ -514,7 +535,6 @@ function App() {
                 <span className="skill-tag">Git & GitHub</span>
                 <span className="skill-tag">VS Code</span>
                 <span className="skill-tag">Postman</span>
-                
               </div>
             </div>
 
@@ -548,16 +568,23 @@ function App() {
             {/*  Weather App  */}
             <article className="featured-card glass-card" id="project-weather">
               <div className="featured-card__visual">
-                <img src="/projects/weather.png" alt="Weather Insights" className="project-preview" />
+                <img
+                  src="/projects/weather.png"
+                  alt="Weather Insights"
+                  className="project-preview"
+                />
                 <div className="visual-overlay"></div>
               </div>
               <div className="featured-card__info">
                 <div className="featured-card__tag">Cloud & Data</div>
-                <h3 className="featured-card__title">Weather Insights Platform</h3>
+                <h3 className="featured-card__title">
+                  Weather Insights Platform
+                </h3>
                 <p className="featured-card__desc">
-                  A high-precision meteorological dashboard that aggregates global weather data 
-                  using RESTful APIs. Features real-time updates and interactive forecasts 
-                  in a sleek, minimalist environment.
+                  A high-precision meteorological dashboard that aggregates
+                  global weather data using RESTful APIs. Features real-time
+                  updates and interactive forecasts in a sleek, minimalist
+                  environment.
                 </p>
                 <div className="featured-card__tech">
                   <span>React</span>
@@ -565,10 +592,16 @@ function App() {
                   <span>Modern CSS</span>
                 </div>
                 <div className="featured-card__footer">
-                  <a href="https://weather-app-iota-fawn-27.vercel.app" className="btn btn--primary">
+                  <a
+                    href="https://weather-app-iota-fawn-27.vercel.app"
+                    className="btn btn--primary"
+                  >
                     <i className="fas fa-external-link-alt"></i> Live Demo
                   </a>
-                  <a href="https://github.com/shivani763/Weather-App.git" className="btn btn--ghost">
+                  <a
+                    href="https://github.com/shivani763/Weather-App.git"
+                    className="btn btn--ghost"
+                  >
                     <i className="fab fa-github"></i> Source
                   </a>
                 </div>
@@ -578,16 +611,23 @@ function App() {
             {/*  Pro-Quiz  */}
             <article className="featured-card glass-card" id="project-quiz">
               <div className="featured-card__visual">
-                <img src="/projects/quiz.png" alt="Pro-Quiz" className="project-preview" />
+                <img
+                  src="/projects/quiz.png"
+                  alt="Pro-Quiz"
+                  className="project-preview"
+                />
                 <div className="visual-overlay"></div>
               </div>
               <div className="featured-card__info">
                 <div className="featured-card__tag">EdTech & Logic</div>
-                <h3 className="featured-card__title">Pro-Quiz Educational System</h3>
+                <h3 className="featured-card__title">
+                  Pro-Quiz Educational System
+                </h3>
                 <p className="featured-card__desc">
-                  An advanced learning platform designed for dynamic knowledge assessment. 
-                  Implements complex state management to provide seamless transitions, 
-                  timed challenges, and detailed performance analytics.
+                  An advanced learning platform designed for dynamic knowledge
+                  assessment. Implements complex state management to provide
+                  seamless transitions, timed challenges, and detailed
+                  performance analytics.
                 </p>
                 <div className="featured-card__tech">
                   <span>JavaScript</span>
@@ -595,10 +635,16 @@ function App() {
                   <span>State Logic</span>
                 </div>
                 <div className="featured-card__footer">
-                  <a href="https://quiztaker-web-main.vercel.app/" className="btn btn--primary">
+                  <a
+                    href="https://quiztaker-web-main.vercel.app/"
+                    className="btn btn--primary"
+                  >
                     <i className="fas fa-external-link-alt"></i> Live Demo
                   </a>
-                  <a href="https://github.com/shivani763/quiztaker-web-main.git" className="btn btn--ghost">
+                  <a
+                    href="https://github.com/shivani763/quiztaker-web-main.git"
+                    className="btn btn--ghost"
+                  >
                     <i className="fab fa-github"></i> Source
                   </a>
                 </div>
@@ -608,16 +654,23 @@ function App() {
             {/*  TaskFlow  */}
             <article className="featured-card glass-card" id="project-todo">
               <div className="featured-card__visual">
-                <img src="/projects/todo.png" alt="TaskFlow" className="project-preview" />
+                <img
+                  src="/projects/todo.png"
+                  alt="TaskFlow"
+                  className="project-preview"
+                />
                 <div className="visual-overlay"></div>
               </div>
               <div className="featured-card__info">
                 <div className="featured-card__tag">Enterprise & SaaS</div>
-                <h3 className="featured-card__title">TaskFlow Performance Suite</h3>
+                <h3 className="featured-card__title">
+                  TaskFlow Performance Suite
+                </h3>
                 <p className="featured-card__desc">
-                  An enterprise-grade task orchestration tool optimized for performance and 
-                  scalability. Built with Angular, it provides a reactive interface 
-                  for complex workflow management and data persistence.
+                  An enterprise-grade task orchestration tool optimized for
+                  performance and scalability. Built with Angular, it provides a
+                  reactive interface for complex workflow management and data
+                  persistence.
                 </p>
                 <div className="featured-card__tech">
                   <span>Angular</span>
@@ -625,10 +678,16 @@ function App() {
                   <span>ReactiveX</span>
                 </div>
                 <div className="featured-card__footer">
-                  <a href="https://to-do-list-tau-self-15.vercel.app" className="btn btn--primary">
+                  <a
+                    href="https://to-do-list-tau-self-15.vercel.app"
+                    className="btn btn--primary"
+                  >
                     <i className="fas fa-external-link-alt"></i> Live Demo
                   </a>
-                  <a href="https://github.com/shivani763/To-Do-List.git" className="btn btn--ghost">
+                  <a
+                    href="https://github.com/shivani763/To-Do-List.git"
+                    className="btn btn--ghost"
+                  >
                     <i className="fab fa-github"></i> Source
                   </a>
                 </div>
@@ -1115,17 +1174,20 @@ function App() {
               <span className="logo-bracket">&lt;</span>Shivani
               <span className="logo-bracket">/&gt;</span>
             </a>
-            <p className="footer__copy">
-              © 2026 Shivani. All rights reserved.
-            </p>
+            <p className="footer__copy">© 2026 Shivani. All rights reserved.</p>
             <div className="footer__socials">
               <a
                 href="mailto:shivanigoswami077@gmail.com"
                 aria-label="Email"
                 id="footer-email"
               >
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                <svg
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                >
+                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                 </svg>
               </a>
               <a
@@ -1135,8 +1197,13 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                <svg
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                >
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                 </svg>
               </a>
               <a
@@ -1146,8 +1213,13 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                <svg
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                >
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                 </svg>
               </a>
             </div>
@@ -1163,11 +1235,20 @@ function App() {
       <div id="cert-lightbox" className="cert-lightbox">
         <div className="cert-lightbox__overlay" id="lightbox-overlay"></div>
         <div className="cert-lightbox__container">
-          <button className="cert-lightbox__close" id="lightbox-close" aria-label="Close">
+          <button
+            className="cert-lightbox__close"
+            id="lightbox-close"
+            aria-label="Close"
+          >
             <i className="fas fa-times"></i>
           </button>
           <div className="cert-lightbox__crop-box">
-            <img id="lightbox-img" src="" alt="Certificate" className="cert-lightbox__img--cropped" />
+            <img
+              id="lightbox-img"
+              src=""
+              alt="Certificate"
+              className="cert-lightbox__img--cropped"
+            />
           </div>
         </div>
       </div>
