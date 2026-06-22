@@ -331,7 +331,7 @@ function App() {
             </div>
             <div className="hero__socials">
               <a
-                href="https://github.com/shivani763"
+                href="https://github.com/shivani763/My-portfolio"
                 className="social-link"
                 id="social-github"
                 aria-label="GitHub"
